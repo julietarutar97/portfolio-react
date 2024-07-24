@@ -89,7 +89,7 @@ const Header = () => {
 
         <Box mt='150px'  width='100%' ml='295px' justifyContent='center'>
           <Image src='/icons/iconSection1.svg'  width='28px' mb='15px'/>
-          <Text as='b' fontSize='2xl'>Bienvenido !</Text>
+          <Text as='b' fontSize='18px' textTransform='uppercase'>Bienvenido !</Text>
           <Flex direction='row' alignItems='center' mb='15px'>
           <Text as='h1'  fontSize='7xl'fontFamily='nanumGothic.general' marginRight='10px' >Soy</Text>
           <Text as ='b' fontSize='7xl'fontFamily='nanumGothic.general'fontWeight='medium'>Desarrolladora</Text>
@@ -102,7 +102,7 @@ const Header = () => {
         </Box>
 
 
-        <Flex direction='row' marginBottom='30px'>
+        <Flex direction='row' marginBottom='30px' opacity='0.8'> 
 
           {/* Iconos redes izquierda */}
           <Flex ml='22px' direction='column' alignItems='center'>
@@ -110,15 +110,15 @@ const Header = () => {
               <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref}> </SocialLinks>
             ))
             }
-            <Divider orientation='vertical' height='36px' marginTop='8px' marginBottom='8px'/>
+            <Divider orientation='vertical' height='36px' marginTop='8px' marginBottom='8px' marginRight='20px'  />
             
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>S</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>E</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>G</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>U</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>I</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>M</Text>
-            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>E</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>S</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>E</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>G</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>U</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>I</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>M</Text>
+            <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>E</Text>
           </Flex>
 
           <Flex as='section' direction='row' alignItems='flex-end' marginLeft='230px' fontSize='10px'>
@@ -128,9 +128,12 @@ const Header = () => {
             }
           </Flex>
 
-          <Box>
-
-          </Box>
+          <Flex as='section' direction='row' paddingLeft='250px' alignItems='flex-end' fontSize='12px'>
+          {SocialMedia.map( (social, index) => (
+              index<3 && <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref} > </SocialLinks >
+            ))
+            }
+          </Flex>
         </Flex>
       </Flex>
       
