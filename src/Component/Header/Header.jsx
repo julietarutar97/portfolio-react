@@ -14,10 +14,24 @@ import {
   
 } from '@chakra-ui/react'
 import SocialLinks from '../SocialLinks/SocialLinks'
+import ContactLinks from '../SocialLinks/ContactLinks'
 
 
 const Header = () => {
-
+  let Contact=[
+    {
+      "tittle":"Email: ",
+      "info": " julietarutar97@gmail.com"
+    },
+    {
+      "tittle":"Teléfono: ",
+      "info": " +543435201236"
+    },
+    {
+      "tittle":"Ubicación: ",
+      "info": " Paraná, Entre Ríos"
+    },
+  ]
   let SocialMedia = [
     { 
       "urlIcono":"./icons/linkedinIcon.svg", 
@@ -39,10 +53,10 @@ const Header = () => {
 
 
   return (
-    <div>
+    
       <Flex direction='column' bgImage='./images/imagenBack.png' bgSize='cover' bgRepeat='no-repeat' bgPos='center' width='100vw' alignItems='flex-start' fontFamily='poppins.general' color='white'>
 
-        <Flex direction='row' justifyContent='space-around' width='100%' spacing='240px'> 
+        <Flex direction='row' justifyContent='space-around' width='100%' spacing='240px' mt='10px'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='200px' objectFit='contain' alignItems='center'/>
 
             <Menu>
@@ -88,7 +102,7 @@ const Header = () => {
         </Box>
 
 
-        <Flex direction='row'>
+        <Flex direction='row' marginBottom='30px'>
 
           {/* Iconos redes izquierda */}
           <Flex ml='22px' direction='column' alignItems='center'>
@@ -107,9 +121,12 @@ const Header = () => {
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px'>E</Text>
           </Flex>
 
-          <Box>
-
-          </Box>
+          <Flex as='section' direction='row' alignItems='flex-end' marginLeft='230px' fontSize='10px'>
+          {Contact.map( (social, index) => (
+              <ContactLinks key={index} tittle={social.tittle} info={social.info}> </ContactLinks>
+            ))
+            }
+          </Flex>
 
           <Box>
 
@@ -117,7 +134,6 @@ const Header = () => {
         </Flex>
       </Flex>
       
-    </div>
   )
 }
 
