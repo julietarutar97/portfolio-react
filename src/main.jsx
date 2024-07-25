@@ -8,7 +8,7 @@ import Header from './Component/Header/Header.jsx'
 import SectionColumns from './Component/body/sections/SectionColumns.jsx'
 import VerticalContainer from './Component/body/sections/VerticalContainer.jsx'
 import Hero from './Component/hero/Hero.jsx'
-
+import Services from './Component/body/sections/Services.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,6 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Header/>
       <Hero />
+      <Services/>
+
     </ChakraProvider>
   </React.StrictMode>,
 )
