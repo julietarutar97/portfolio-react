@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import SocialLinks from '../SocialLinks/SocialLinks'
 import ContactLinks from '../SocialLinks/ContactLinks'
+import theme from '../../resources/theme'
 
 
 const Header = () => {
@@ -54,9 +55,9 @@ const Header = () => {
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenBack.png' bgSize='cover' bgRepeat='no-repeat' bgPos='center' width='100vw' alignItems='flex-start' fontFamily='poppins.general' color='white'>
+      <Flex direction='column' bgImage='./images/imagenBack.png' bgSize='cover'  bgPos='center' width='100vw' alignItems='flex-start' fontFamily='poppins.general' color='white'>
 
-        <Flex direction='row' justifyContent='space-around' width='100%' spacing='240px' mt='10px'> 
+        <Flex direction='row' justifyContent='space-around' width='100vw' spacing='240px' mt='10px'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='200px' objectFit='contain' alignItems='center'/>
 
             <Menu>
@@ -87,7 +88,7 @@ const Header = () => {
             </Menu>
         </Flex>
 
-        <Box mt='150px'  width='100%' ml='295px' justifyContent='center'>
+        <Box mt='150px' ml='295px' justifyContent='center'>
           <Image src='/icons/iconSection1.svg'  width='28px' mb='15px'/>
           <Text as='b' fontSize='18px' textTransform='uppercase'>Bienvenido !</Text>
           <Flex direction='row' alignItems='center' mb='15px'>

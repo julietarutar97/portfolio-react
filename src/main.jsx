@@ -6,6 +6,8 @@ import { ChakraProvider, theme } from '@chakra-ui/react'
 
 import Header from './Component/Header/Header.jsx'
 import SectionColumns from './Component/body/sections/SectionColumns.jsx'
+import VerticalContainer from './Component/body/sections/VerticalContainer.jsx'
+import Hero from './Component/hero/Hero.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,8 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ChakraProvider theme={theme}>
 
       <Header/>
-      <SectionColumns titulo="Título de la Sección" 
-        texto="Este es el texto de la sección."/>
+      <Hero />
     </ChakraProvider>
   </React.StrictMode>,
 )
