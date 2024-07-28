@@ -8,9 +8,9 @@ const HorizontalContainer = ({tittle, info, elements, directionFlex}) => {
         <Flex direction='row' justifyContent='space-evenly' textAlign='left'  w='100vw'>
             <Box display='flex' flexDirection='column'  w='240px'>
             <Text as='h2' fontSize='30px' textTransform='uppercase' letterSpacing={'2px'} fontWeight='450' marginBottom='20px' lineHeight='40px' w='520px' mt='24px'>{tittle}</Text>
-                <Text as='p' lineHeight='18px' textAlign='left' fontSize='12px'>{info}</Text>
+                <Text as='p' lineHeight='20px' textAlign='left' fontSize='12px' opacity='0.8'>{info}</Text>
             </Box>
-            <Box as='section' display='flex' flexDirection={directionFlex} flexWrap='nowrap'  alignItems='center'>
+            <Box as='section' display='flex' flexDirection={directionFlex} flexWrap='nowrap' width='401px' alignItems='flex-start'>
                 {elements.map((element, index) => (
                     <Box key={index} display='flex'>
                     {element}

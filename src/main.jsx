@@ -9,6 +9,7 @@ import VerticalContainer from './Component/body/sections/VerticalContainer.jsx'
 import Hero from './Component/hero/Hero.jsx'
 import ServicesSection from './Component/body/sections/ServicesSection.jsx'
 import MySkills from './Component/skills/MySkills.jsx'
+import Experiencia from './Component/experiencia/Experiencia.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Hero />
       <ServicesSection/>
       <MySkills/>
+      <Experiencia/>
     </ChakraProvider>
   </React.StrictMode>,
 )
