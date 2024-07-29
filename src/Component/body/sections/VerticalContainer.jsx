@@ -16,7 +16,7 @@ const VerticalContainer = ({tittle, info, elements, directionFlex, letterSpacing
                     </Box>
                      ))}
             </Box>
-        <Divider  orientation='horizontal' marginBottom='85px' marginTop='85px' opacity='0.1' width='1215px' />
+        <Divider  orientation='horizontal' marginBottom='85px' marginTop='85px' opacity='0.1' width='63%' />
     </Flex>
   )
 }
