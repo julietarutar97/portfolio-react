@@ -19,7 +19,7 @@ const Form = (props) => {
       <FormCompleto></FormCompleto>
     ]
   return (
-    <Flex width='100vw'>
+    <Flex width='100%'>
       <HorizontalContainer tittle={"contactame"} info={"¡Hola! Si tienes alguna pregunta o proyecto en mente, estaré encantado/a de escucharte. Completa el formulario y estaré en contacto contigo pronto."} elements={elementosForm} directionFlex={'column'}>
       </HorizontalContainer>
     </Flex>

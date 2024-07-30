@@ -14,18 +14,30 @@ import ContactForm from './Component/form/ContactForm.jsx'
 import Galeria from './Component/galeria/Galeria.jsx'
 import Footer from './Component/Footer/Footer.jsx'
 
+const breakpoints = {
+  base: '0px',
+  sm: '320px',
+  md: '480px',
+  lg: '768px',
+  xl: '1024px',
+  '2xl': '1280px',
+  '3xl': '1440px',
+  '4xl': '1920px',
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
 
       <Header/>
-      <Hero />
-      <ServicesSection/>
+       <Hero />
+      <ServicesSection/> 
       <MySkills/>
       <Experiencia/>
       <Galeria/>
       <ContactForm/>
       <Footer/>
+
     </ChakraProvider>
   </React.StrictMode>,
 )

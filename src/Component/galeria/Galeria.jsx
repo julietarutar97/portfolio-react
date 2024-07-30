@@ -1,18 +1,21 @@
 import React from 'react'
-import { Divider, Text, Link, Flex, Container, Box, Image} from '@chakra-ui/react'
+import { Divider, Text, Link, Flex, Container, Box, Image, useBreakpointValue} from '@chakra-ui/react'
 import ContainerGaleria from './ContainerGaleria'
 
 const Galeria = () => {
+  const paddingLeft = useBreakpointValue({ base: '50px', '2xl': '325px'})
+  const paddingRight = useBreakpointValue({ base: '50px', '2xl': '325px' })
+  
     const elementGaleria =[
         
     ]
   return (
     
-    <Flex bg='#131313' direction='column' alignItems='center'>
+    <Flex bg='#131313' direction='column' alignItems='center' width='100%'>
 
    
     
-    <Flex  direction='column' width='100%' justifyContent='space-between' paddingLeft='325px' paddingRight='325px' color='white'>
+    <Flex  direction='column' width='100%' justifyContent='space-between' paddingLeft={paddingLeft} paddingRight={paddingRight} color='white'>
         
         <Box display='flex' flexDirection='column' fontSize='14px' textTransform='uppercase' fontWeight='550' letterSpacing='1.5px'>
             <Text as='p'marginBottom='16px' mt='24px' lineHeight='18px'>algunos proyectos</Text>

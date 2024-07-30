@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import { Box, Flex, Image, Container, Text, Heading, Spacer, Link, Divider} from '@chakra-ui/react'
+import { Box, Flex, Image, Container, Text, Heading, Spacer, Link, Divider, useBreakpoint, useBreakpointValue} from '@chakra-ui/react'
 import {
   Menu,
   MenuButton,
@@ -16,9 +16,18 @@ import {
 import SocialLinks from '../SocialLinks/SocialLinks'
 import ContactLinks from '../SocialLinks/ContactLinks'
 import theme from '../../resources/theme'
+import { bool, boolean } from 'yup'
 
 
 const Header = () => {
+
+  const display = useBreakpointValue({ base: 'none',md:'none', lg: 'flex' })
+  const paddingLeft=useBreakpointValue({base: '25px', '2xl':'85px'})
+  const paddingRight= useBreakpointValue({base: '25px', '2xl':'85px'})
+  const widthImage = useBreakpointValue({base: '85px', })
+  const marginLeft = useBreakpointValue({base: '50px', xl:'295px'})
+
+
   let Contact=[
     {
       "tittle":"Email: ",
@@ -57,8 +66,8 @@ const Header = () => {
     
       <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white'>
 
-        <Flex direction='row' justifyContent='space-between' mt='10px' pr='80px' pl='80px' width='100%'> 
-            <Image src='/images/logoIcon.png' alt='imagen Logo' width='200px' objectFit='contain' alignItems='center'/>
+        <Flex direction='row' justifyContent='space-between' mt='10px' pr={paddingRight} pl={paddingLeft} width='100%'> 
+            <Image src='/images/logoIcon.png' alt='imagen Logo' width='13%' objectFit='contain' alignItems='center'/>
 
             <Menu>
               <MenuButton bg='transparent'
@@ -88,7 +97,7 @@ const Header = () => {
             </Menu>
         </Flex>
 
-        <Box mt='150px' ml='295px' justifyContent='center'>
+        <Box mt='150px' ml={marginLeft} justifyContent='center'>
           <Image src='/icons/iconSection1.svg'  width='28px' mb='15px'/>
           <Text as='b' fontSize='18px' textTransform='uppercase'>Bienvenido !</Text>
           <Flex direction='row' alignItems='center' mb='15px'>
@@ -111,8 +120,10 @@ const Header = () => {
               <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref}> </SocialLinks>
             ))
             }
-            <Divider orientation='vertical' height='36px' marginTop='8px' marginBottom='8px' marginRight='20px'  />
+            <Divider orientation='vertical' height='36px' marginTop='8px' marginBottom='8px' marginRight='20px' display={display} />
             
+            <Flex display={display}>
+
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>S</Text>
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>E</Text>
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>G</Text>
@@ -120,6 +131,7 @@ const Header = () => {
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>I</Text>
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>M</Text>
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>E</Text>
+            </Flex>
           </Flex>
 
           <Flex as='section' direction='row' alignItems='flex-end' marginLeft='230px' fontSize='10px'>
@@ -129,7 +141,7 @@ const Header = () => {
             }
           </Flex>
 
-          <Flex as='section' direction='row' paddingLeft='250px' alignItems='flex-end' fontSize='12px'>
+          <Flex as='section' display={display} direction='row' paddingLeft='250px' alignItems='flex-end' fontSize='12px'>
           {SocialMedia.map( (social, index) => (
               index<3 && <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref} > </SocialLinks >
             ))

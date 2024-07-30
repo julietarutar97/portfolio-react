@@ -1,13 +1,15 @@
 import React from 'react'
-import { Divider, Text, Link, Flex, Container, Box, Image} from '@chakra-ui/react'
+import { Divider, Text, Link, Flex, Container, Box, Image, useBreakpointValue} from '@chakra-ui/react'
 import SocialMediaFooter from './SocialMediaFooter'
 import NavFooter from './NavFooter'
 
 
 const Footer = () => {
+  const flexDirection=useBreakpointValue({ base: 'row', lg: 'column'})
+  const justifyContent = useBreakpointValue ({base: 'center',md:'center', lg:'center'})
     return (
-      <Flex direction='column' alignContent='center' justifyContent='space-between'  bg="#131313" alignItems='center'>
-        <Flex direction='row' wrap='wrap' textAlign='left' justifyContent='space-between' margin='0 45px'>
+      <Flex direction='column' alignContent='center' justifyContent={justifyContent}  bg="#131313" alignItems='center'>
+        <Flex direction='row' wrap='wrap' textAlign='left' justifyContent={justifyContent} margin='0 45px'>
           <SocialMediaFooter></SocialMediaFooter>
           <NavFooter></NavFooter>
         </Flex>

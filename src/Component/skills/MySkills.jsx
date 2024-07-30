@@ -20,8 +20,11 @@ const MySkills = () => {
         </DetallesSkills>, 
     ]
   return (
+    <Flex    maxWidth='100%'>
+
     <HorizontalContainer tittle={"Mis habilidades"} info={"Acá vas a encontrar algunos de los lenguajes de programacion que uso y otras herramientas de diseño de estrategias"} elements={cargaHabilidades} directionFlex={'column'}>
     </HorizontalContainer>
+    </Flex>
   )
 }
 
