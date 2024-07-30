@@ -4,7 +4,7 @@ import { Divider, Text, Link, Flex, Container, Box, Image} from '@chakra-ui/reac
 
 const DetalleExperiencias = ({empresa, info, detalle}) => {
   return (
-    <Flex direction='column' alignContent='flex-start' opacity='0.8'>
+    <Flex direction='column' opacity='0.8' maxWidth='413px'>
         <Box display='flex' direction='row' alignItems='center'>
             <Image src='./icons/iconoCircul.png' width='15px' height='15px'/>
             <Text as='h2' marginLeft='20px' textTransform='uppercase' fontSize='12px' fontWeight='550' fontFamily='nanumGothic.general' letterSpacing='1.5px' lineHeight='40px' >{empresa}
@@ -18,7 +18,8 @@ const DetalleExperiencias = ({empresa, info, detalle}) => {
     line-height: 40px; */}
                 </Text>   
         </Box>
-        <Box borderLeft= '1px solid rgba(255,255,255,0.1)' marginLeft='6px' paddingLeft='35px' paddingBottom='20px' marginBottom='10px'>
+        <Box borderLeft= '1px solid rgba(255,255,255,0.1)' marginLeft='6px' paddingLeft='35px' paddingBottom='20px' marginBottom='10px' 
+        >
             <Text as='h3' fontSize='12px' fontWeight='400' letterSpacing='2px' margin='12px 0' textTransform='uppercase' >{info}</Text>
             <Text as='p' fontSize='12px' letterSpacing='0.2px' fontWeight='200' marginTop='2px' >{detalle}
             </Text>

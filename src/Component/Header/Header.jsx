@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenBack.png' bgSize='cover'  bgPos='center' width='100vw' alignItems='flex-start' fontFamily='poppins.general' color='white'>
+      <Flex direction='column' bgImage='./images/imagenBack.png' bgSize='cover'  bgPos='center' width='100%' alignItems='flex-start' fontFamily='poppins.general' color='white'>
 
         <Flex direction='row' justifyContent='space-around' width='100vw' spacing='240px' mt='10px'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='200px' objectFit='contain' alignItems='center'/>

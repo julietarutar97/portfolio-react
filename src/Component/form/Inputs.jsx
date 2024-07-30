@@ -10,7 +10,7 @@ import {
 
 
 
-const Inputs = ({placeHolder}) => {
+const Inputs = ({placeHolder, altura}) => {
 
     function validateName(value) {
         let error
@@ -25,17 +25,15 @@ const Inputs = ({placeHolder}) => {
           alert(JSON.stringify(values, null, 2))
           actions.setSubmitting(false)
         }, 1000)
-      }}>
+      }} width='100%'>
       
-        <Form>
+        <Form> 
             <Field name='name' validate={validateName}>
             {({ field, form }) => (
               <FormControl isInvalid={form.errors.name && form.touched.name}>
                 
-            <Input {...field} placeholder={placeHolder}  margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)'/>
-            {/* <Input {...field} placeholder='Correo electrónico'  margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)'/>
-            <Textarea {...field}  margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)'/>
-             */}
+            <Input {...field} placeholder={placeHolder}  margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)' borderRadius='0px' width='408px' height={altura}/>
+            
                 <FormErrorMessage>{form.errors.name}</FormErrorMessage>
               </FormControl>
             )}

@@ -17,14 +17,21 @@ const Form = (props) => {
     const inputs =[
         <Inputs placeHolder={'Nombre'}></Inputs>,
         <Inputs placeHolder={'Correo electrónico'}></Inputs>,
-        <Inputs placeHolder={''}></Inputs>, 
+        <Inputs placeHolder={''} altura={'150px'}></Inputs>, 
         <Button
         mt={4}
-        colorScheme='teal'
+        bg='transparent'
+        color='white'
+        fontWeight='300'
+        border='2px solid white'
+        fontSize='12px'
+        cursor='pointer'
+        padding='5px 50px'
+        borderRadius='5px'
         isLoading={props.isSubmitting}
         type='submit'
       >
-        Submit
+        Enviar mensaje
       </Button> 
     ]
   return (

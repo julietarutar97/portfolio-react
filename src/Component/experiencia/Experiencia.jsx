@@ -7,8 +7,7 @@ import DetalleExperiencias from './DetalleExperiencias'
 const Experiencia = () => {
 
     const cargaExperiencia =[
-        <DetalleExperiencias empresa={"Coding Giants"} info={"Profesora de programación"} detalle={"Doy clases de programación para niños y adolescentes, enseñándoles los fundamentos de la tecnología. En mis clases, los estudiantes aprenden a crear proyectos básicos y a resolver problemas con código."}></DetalleExperiencias>,
-
+      <DetalleExperiencias empresa={"Coding Giants"} info={"Profesora de programación"} detalle={"Doy clases de programación para niños y adolescentes, enseñándoles los fundamentos de la tecnología. En mis clases, los estudiantes aprenden a crear proyectos básicos y a resolver problemas con código."}></DetalleExperiencias>,
         <DetalleExperiencias empresa={"freelancer"} info={"Desarrollo de sistemas internos"} detalle={"desarrolladora de sistemas de reservas para una empresa de alquileres"}></DetalleExperiencias>,
     ]
 
