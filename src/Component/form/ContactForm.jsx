@@ -30,6 +30,7 @@ const Form = (props) => {
         borderRadius='5px'
         isLoading={props.isSubmitting}
         type='submit'
+        _hover={{bg:'#131313'}}
       >
         Enviar mensaje
       </Button> 
