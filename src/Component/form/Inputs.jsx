@@ -10,39 +10,10 @@ import {
 
 
 
-const Inputs = ({placeHolder, altura}) => {
+const Inputs = ({placeHolder, nombreInput,handleChange}) => {
 
-    function validateName(value) {
-        let error
-        if (!value) {
-          error = 'El nombre es obligatorio'
-        }
-        return error
-      }
   return (
-    <Formik  onSubmit={(values, actions) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2))
-          actions.setSubmitting(false)
-        }, 1000)
-      }} width='100%'>
-      
-        <Form> 
-            <Field name='name' validate={validateName}>
-            {({ field, form }) => (
-              <FormControl isInvalid={form.errors.name && form.touched.name}>
-                
-            <Input {...field} placeholder={placeHolder}  margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)' borderRadius='0px' width='408px' height={altura}/>
-            
-                <FormErrorMessage>{form.errors.name}</FormErrorMessage>
-              </FormControl>
-            )}
-          </Field>
-
-          
-          
-        </Form>
-    </Formik>
+    <Input placeholder={placeHolder}  name={nombreInput} margin='10px 0px' color='rgb(245, 245, 245)' fontSize='12px' border='1px solid rgba(245,245,245,0.2)' borderRadius='0px' width='408px' onChange={handleChange}/>
   )
 }
 

@@ -12,6 +12,7 @@ import MySkills from './Component/skills/MySkills.jsx'
 import Experiencia from './Component/experiencia/Experiencia.jsx'
 import ContactForm from './Component/form/ContactForm.jsx'
 import Galeria from './Component/galeria/Galeria.jsx'
+import Footer from './Component/Footer/Footer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Experiencia/>
       <Galeria/>
       <ContactForm/>
+      <Footer/>
     </ChakraProvider>
   </React.StrictMode>,
 )

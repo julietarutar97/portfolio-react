@@ -12,8 +12,11 @@ const Experiencia = () => {
     ]
 
   return (
+    <Flex width='100%'>
+
     <HorizontalContainer tittle={"Mi experiencia previa"} info={"Tengo una amplia experiencia laboral, trabajo desde adolescente. Fui profesora de danzas españolas, empleada en varios negocios de mi ciudad y gestora de cobranzas para una gran empresa. Acá vas a ver detalles de mis últimas experiencias relacionadas al mundo de desarrolladores"} elements={cargaExperiencia} directionFlex={'column'}>
     </HorizontalContainer>
+    </Flex>
   )
 }
 

@@ -55,9 +55,9 @@ const Header = () => {
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' width='100%' alignItems='flex-start' fontFamily='poppins.general' color='white'>
+      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white'>
 
-        <Flex direction='row' justifyContent='space-around' width='100%' mt='10px'> 
+        <Flex direction='row' justifyContent='space-between' mt='10px' pr='80px' pl='80px' width='100%'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='200px' objectFit='contain' alignItems='center'/>
 
             <Menu>
@@ -68,7 +68,7 @@ const Header = () => {
               >
               <Flex direction='row' alignItems='center'>   
                 <Image src="/icons/iconMenu.png" alt="Icono de menú desplegable" mr='10px'/>
-                <Text fontSize='12px'>Menú</Text>
+                <Text fontSize='14px' fontWeight='100'>Menú</Text>
               </Flex>
               </MenuButton>
               <MenuList>

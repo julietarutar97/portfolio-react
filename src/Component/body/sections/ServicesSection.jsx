@@ -16,7 +16,7 @@ const services = () => {
 
 
   return (
-    <Flex>
+    <Flex width='100%'>
         <VerticalContainer tittle={"Explora los Servicios"} info={"DESCUBRI LA DIVERSIDAD DE SERVICIOS. ¡EXPLORA AHORA Y ENCONTRA LA SOLUCIÓN PERFECTA PARA VOS!"} elements={cards} directionFlex={'row'} letterSpacing={'2px'}>
         </VerticalContainer>
     </Flex>

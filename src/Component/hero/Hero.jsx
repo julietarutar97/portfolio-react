@@ -8,9 +8,11 @@ const Hero = () => {
         <Image src='./images/imagenPerfil2.jpg' alt='Imagen de perfil' width='450px'  marginRight='' marginLeft='220px'  marginTop='70px'/>
     ]
   return (
+    <Flex width='100%'>
         <VerticalContainer tittle={"informacion sobre mí, y lo que me gusta hacer"} info={"¡Hola!  Soy  Julieta  Rutar,  una  apasionada  desarrolladora  dedicada  a  brindar  soluciones  digitales  excepcionales.  Con  mi  experiencia  he  perfeccionado  mis  habilidades  y  conocimientos  para  hacer  de  cada  proyecto  un  éxito.  Disfruto  cada  etapa  del  proceso  de  diseño,  desde  la  conceptualización  hasta  la  colaboración  creativa.  Estoy  aquí  para  convertir  tus  ideas  en  realidad  y  llevar  tu  presencia  en  línea  al  siguiente  nivel."} 
         elements={imagenes} directionFlex={'row'} letterSpacing={'1px'}>
         </VerticalContainer>
+    </Flex>
     
   )
 }
