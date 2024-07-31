@@ -12,10 +12,11 @@ const SocialMediaFooter = () => {
         <Image src='./images/logoIcon.png' width={{base:'50%',xl:'28%'}} marginTop='2px'/>
       </Flex>
       <Flex direction='row' marginTop='20px' justifyContent={justifyContent} alignItems={alignItems}>
-            <LinkFooter srcImage={'./icons/linkedinIcon.svg'}></LinkFooter>
-            <LinkFooter srcImage={'./icons/linkedinIcon.svg'}></LinkFooter>
-            <LinkFooter srcImage={'./icons/linkedinIcon.svg'}></LinkFooter>
-            <LinkFooter srcImage={'./icons/linkedinIcon.svg'}></LinkFooter>
+      
+            <LinkFooter srcImage={'./icons/linkedinIcon.svg'} href={'www.linkedin.com/in/julietarutar73'}></LinkFooter>
+            <LinkFooter srcImage={'./icons/gitIcon.svg'}href={'https://github.com/julietarutar97'} ></LinkFooter>
+            <LinkFooter srcImage={'./icons/behanceIcon.svg'} href={'https://www.behance.net/julietarutar'}></LinkFooter>
+            <LinkFooter srcImage={'./icons/gmailIcon.svg'} href={'mailto:julietarutar97@gmail.com'}></LinkFooter>
       </Flex>
     </Flex>
   )

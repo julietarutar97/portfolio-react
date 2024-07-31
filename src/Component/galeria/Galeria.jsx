@@ -25,13 +25,13 @@ const Galeria = () => {
 
         <Flex justifyContent='space-between' flexWrap='wrap' direction={{base:'column', sm:'row'}}  > 
 
-            <ContainerGaleria href={'https://www.behance.net/gallery/123921711/MECANDOC'} bgImage={'./images/appMecandoc.png'} tituloProyecto={'mecandoc'} descProyecto={'Diseño de aplicación móvil'} >
+            <ContainerGaleria href={'https://www.behance.net/gallery/123921711/MECANDOC'} bgImage={'./images/appMecandoc.png'} tituloProyecto={'mecandoc'} descProyecto={'Diseño de aplicación móvil'} color={'#131313'} >
             </ContainerGaleria>
 
-            <ContainerGaleria href={'https://www.behance.net/gallery/123921711/MECANDOC'} bgImage={'./images/appMecandoc.png'} tituloProyecto={'mecandoc'} descProyecto={'Diseño de aplicación móvil'} >
+            <ContainerGaleria href={'https://github.com/pato-1441/alquileresTemporales'} bgImage={'./images/alquileres.png'} tituloProyecto={'Alquileres temporarios'} descProyecto={'Software para empresa de alquileres'}color={'#131313'}  >
             </ContainerGaleria>
 
-            <ContainerGaleria href={'https://www.behance.net/gallery/123921711/MECANDOC'} bgImage={'./images/appMecandoc.png'} tituloProyecto={'mecandoc'} descProyecto={'Diseño de aplicación móvil'} >
+            <ContainerGaleria href={'https://github.com/pato-1441/caballerosCalabozosDragones'} bgImage={'./images/juegocdc.png'} tituloProyecto={'caballeros, dragones y calabozos'} descProyecto={'Juego'} color={'white'} >
             </ContainerGaleria>
         
         </Flex>

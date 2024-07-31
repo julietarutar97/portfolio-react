@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider, Text, Link, Flex, Container, Box, Image, Grid, GridItem, useBreakpointValue} from '@chakra-ui/react'
 
-const ContainerGaleria = ({href, bgImage, tituloProyecto,descProyecto}) => {
+const ContainerGaleria = ({href, bgImage, tituloProyecto,descProyecto, color}) => {
   const height = useBreakpointValue({ base: '260px', md: '390px', lg: '520px' });
   return (
     <Link display='flex' 
@@ -19,7 +19,7 @@ const ContainerGaleria = ({href, bgImage, tituloProyecto,descProyecto}) => {
     textDecoration='none' 
     flexBasis='48%'
     alignItems='flex-end'
-    color='#131313'
+    color={color}
     maxWidth='440px'
     transition='0.2s'
     _hover={{ transform: "scale(1.1)" }}

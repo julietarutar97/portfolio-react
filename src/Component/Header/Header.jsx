@@ -54,15 +54,15 @@ const Header = () => {
     },
     {
       "urlIcono":"./icons/gitIcon.svg", 
-      "linkref" : "https://www.linkedin.com/in/julietarutar73",
+      "linkref" : "https://github.com/julietarutar97",
     },
     {
       "urlIcono":"./icons/behanceIcon.svg", 
-      "linkref" : "https://www.linkedin.com/in/julietarutar73",
+      "linkref" : "https://www.behance.net/julietarutar",
     },
     {
       "urlIcono":"./icons/gmailIcon.svg", 
-      "linkref" : "https://www.linkedin.com/in/julietarutar73",
+      "linkref" : "mailto:julietarutar97@gmail.com",
     },
 ]
 

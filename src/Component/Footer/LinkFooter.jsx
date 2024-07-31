@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider, Text, Link, Flex, Container, Box, Image} from '@chakra-ui/react'
 
-const LinkFooter = ({srcImage}) => {
+const LinkFooter = ({srcImage, href}) => {
   return (
     <Link
      display='flex'
@@ -15,6 +15,7 @@ const LinkFooter = ({srcImage}) => {
      transition={{bg:'0.3s', color:'0.3s'}}
      cursor='pointer'
      marginLeft='-8px'
+     href={href}
     >
 
     <Image src={srcImage} width={{base:'25px',xl:'15px'}} height='16px'/>

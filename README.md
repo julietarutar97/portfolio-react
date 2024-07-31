@@ -24,15 +24,18 @@ Sigue estos pasos para clonar el proyecto e instalar las dependencias:
 
 
 2. **Explora el Proyecto:**
-    ```cd portfolio-react
+    ```bash
+    cd portfolio-react
 
 
 3. **Instala las dependencias**
-    ```npm install
+    ```bash
+    npm install
 
 
 4. **Inicia**
-    ```npm start
+    ```bash
+    npm start
 
 # Tecnologías Utilizadas
 •	HTML
