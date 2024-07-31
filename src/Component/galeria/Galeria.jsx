@@ -11,7 +11,7 @@ const Galeria = () => {
     ]
   return (
     
-    <Flex bg='#131313' direction='column' alignItems='center' width='100%'>
+    <Flex bg='#131313' direction='column' alignItems='center' width='100%' id='proyectos'> 
 
    
     

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { animateScroll as scroll } from 'react-scroll';
 import { Box, Flex, Image, Container, Text, Heading, Spacer, Link, Divider, useBreakpoint, useBreakpointValue} from '@chakra-ui/react'
 import {
   Menu,
@@ -65,10 +66,13 @@ const Header = () => {
     },
 ]
 
+const handleClick = (to) => {
+  scroll.scrollTo(document.getElementById(to).offsetTop);
+};
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white' width='100%' maxWidth='100vw'>
+      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white' width='100vw' maxWidth='100%'>
 
         <Flex direction='row' justifyContent='space-between' mt='10px' pr={paddingRight} pl={paddingLeft} width='100%'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='13%' objectFit='contain' alignItems='center'/>
@@ -78,25 +82,34 @@ const Header = () => {
                 as={IconButton}
                 aria-label='Options' 
                 variant='none'
+                
               >
               <Flex direction='row' alignItems='center'>   
                 <Image src="/icons/iconMenu.png" alt="Icono de menú desplegable" mr='10px'/>
                 <Text fontSize='14px' fontWeight='100'>Menú</Text>
               </Flex>
               </MenuButton>
-              <MenuList>
-                <MenuItem >
-                  New Tab
-                </MenuItem>
-                <MenuItem>
-                  New Window
-                </MenuItem>
-                <MenuItem>
-                  Open Closed Tab
-                </MenuItem>
-                <MenuItem>
-                  Open File...
-                </MenuItem>
+              <MenuList bg='transparent'>
+              <MenuItem onClick={() => handleClick('hero')} bg='transparent' color='white'>
+              Sobre Mí
+            </MenuItem>
+              <MenuItem onClick={() => handleClick('servicios')} bg='transparent' color='white'>
+              Servicios
+            </MenuItem>
+            <MenuItem onClick={() => handleClick('habilidades')} bg='transparent' color='white'>
+              Habilidades
+            </MenuItem>
+              <MenuItem onClick={() => handleClick('experiencia')} bg='transparent' color='white'>
+              Experiencia
+            </MenuItem>
+              
+              <MenuItem onClick={() => handleClick('proyectos')} bg='transparent' color='white'>
+              Proyectos
+            </MenuItem>
+              <MenuItem onClick={() => handleClick('contacto')} bg='transparent' color='white'>
+              Contacto
+            </MenuItem>
+            
               </MenuList>
             </Menu>
         </Flex>
