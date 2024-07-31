@@ -1,8 +1,49 @@
-# React + Vite
+# trabajoFinal2-portfolio en react
+# Portfolio Website
+Este proyecto es parte del trabajo práctico de la Diplomatura en Programación Web Full Stack 2024 de la UTN. Está inspirado en el diseño de otro portafolio. 
+Podes acceder al original haciendo click acá:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+www.behance.net/gallery/175746339/Portfolio-Website-Design?tracking_source=search_projects|website+portfolio&l=22
 
-Currently, two official plugins are available:
+El diseño anterior con HTML y CSS lo podes ver acá:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://julietarutar97.github.io/trabajoFinal1-portfolio/
+
+
+# Deploy
+El proyecto está desplegado en 
+https://portfolio-react-taupe.vercel.app/
+
+# Instalación
+
+Sigue estos pasos para clonar el proyecto e instalar las dependencias:
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/julietarutar97/portfolio-react.git
+
+
+2. **Explora el Proyecto:**
+    ```cd portfolio-react
+
+
+3. **Instala las dependencias**
+    ```npm install
+
+
+4. **Inicia**
+    ```npm start
+
+# Tecnologías Utilizadas
+•	HTML
+•	CSS
+•	JavaScript
+•	React
+
+# Créditos
+•	El diseño original del portafolio es de https://www.behance.net/irfanayub
+
+# Contacto
+•	Correo electrónico: julietarutar97@gmail.com
+•	GitHub: https://github.com/julietarutar97
+
