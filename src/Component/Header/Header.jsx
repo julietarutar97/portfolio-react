@@ -68,7 +68,7 @@ const Header = () => {
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white'>
+      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white' width='100%' maxWidth='100vw'>
 
         <Flex direction='row' justifyContent='space-between' mt='10px' pr={paddingRight} pl={paddingLeft} width='100%'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='13%' objectFit='contain' alignItems='center'/>
@@ -128,7 +128,7 @@ const Header = () => {
             }
             <Divider orientation='vertical' height='36px' marginTop='8px' marginBottom='8px' marginRight='20px' display={display} />
             
-            <Flex display={display}>
+            <Flex display={display} direction='column'>
 
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>S</Text>
             <Text letterSpacing='0.35px' fontWeight='550' fontSize='12px' mb='10px' marginRight='20px'>E</Text>

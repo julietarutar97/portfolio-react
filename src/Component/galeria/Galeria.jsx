@@ -23,7 +23,7 @@ const Galeria = () => {
             <Text as='p' textAlign='left' marginBottom='16px' opacity='0.8'>Aplicaciones/juegos/sistemas</Text>
         </Box>
 
-        <Flex justifyContent='space-between' flexWrap='wrap' dir='row'  > 
+        <Flex justifyContent='space-between' flexWrap='wrap' direction={{base:'column', sm:'row'}}  > 
 
             <ContainerGaleria href={'https://www.behance.net/gallery/123921711/MECANDOC'} bgImage={'./images/appMecandoc.png'} tituloProyecto={'mecandoc'} descProyecto={'Diseño de aplicación móvil'} >
             </ContainerGaleria>

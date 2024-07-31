@@ -19,13 +19,14 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
       direction='column' 
       alignItems='center' 
       w='100%'
+      maxWidth='100vw'
     >
       <Flex 
         direction={flexDirection} 
         justifyContent={justifyContent} 
         textAlign={{ base: 'center', lg: 'left' }}  
         alignItems='center'
-        w='100%' 
+        width='100%' 
         paddingLeft={paddingLeft} 
         paddingRight={paddingRight}
       >
