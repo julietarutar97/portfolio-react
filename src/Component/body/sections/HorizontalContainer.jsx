@@ -18,12 +18,11 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
       color='white' 
       direction='column' 
       alignItems='center' 
-      w='100%'
-      maxWidth='100vw'
+      width='100%'
     >
       <Flex 
         direction={flexDirection} 
-        justifyContent={justifyContent} 
+        justifyContent='center'
         textAlign={{ base: 'center', lg: 'left' }}  
         alignItems='center'
         width='100%' 
@@ -67,6 +66,7 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
           flexWrap='nowrap'  
           alignItems='flex-end'
           paddingTop={paddingTop}
+
         >
           {elements.map((element, index) => (
             <Box key={index} display='flex'>

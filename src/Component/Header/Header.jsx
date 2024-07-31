@@ -72,7 +72,7 @@ const handleClick = (to) => {
 
   return (
     
-      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white' width='100vw' maxWidth='100%'>
+      <Flex direction='column' bgImage='./images/imagenFondo.jpg' bgSize='cover'  bgPos='center' alignItems='flex-start' fontFamily='poppins.general' color='white' width='100%' maxWidth='100%'>
 
         <Flex direction='row' justifyContent='space-between' mt='10px' pr={paddingRight} pl={paddingLeft} width='100%'> 
             <Image src='/images/logoIcon.png' alt='imagen Logo' width='13%' objectFit='contain' alignItems='center'/>
@@ -118,9 +118,9 @@ const handleClick = (to) => {
           <Image src='/icons/iconSection1.svg'  width='28px' mb='15px' display={display}/>
           <Text as='b' fontSize={{base:'25px', md:'18px'}} letterSpacing='1.5px' textTransform='uppercase'>Bienvenido !</Text>
 
-          <Flex direction={flexDirectionTitulo} alignItems={alignItems} mb='15px' mt={{base:'20px',md:''}}>
-          <Text as='h1'  fontSize='7xl'fontFamily='nanumGothic.general' marginRight='10px' >Soy</Text>
-          <Text as ='b' fontSize='7xl'fontFamily='nanumGothic.general'fontWeight='medium'>Desarrolladora</Text>
+          <Flex direction={flexDirectionTitulo} alignItems={alignItems} mb='15px' mt={{base:'20px',md:''}} fontSize={{base:'75px', lg:'7xl'}}>
+          <Text as='b'  fontFamily='nanumGothic.general' marginRight='10px' >Soy</Text>
+          <Text as ='b' fontFamily='nanumGothic.general'fontWeight='medium'>Desarrolladora</Text>
           </Flex>
 
           <Text opacity='0.8' fontSize={{base:'20px',md:'18px'}}>Convierto lo complejo en simple</Text>
