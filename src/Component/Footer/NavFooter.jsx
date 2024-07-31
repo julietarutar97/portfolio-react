@@ -23,7 +23,7 @@ const NavFooter = () => {
         <Text>Argentina</Text>,
     ]
   return (
-    <Flex direction='row'>
+    <Flex direction='row' display={{base:'none', md:'flex'}}>
       <DicNavFooter tittle={'navegación'} elements={navigation}></DicNavFooter>
       <DicNavFooter tittle={'Contacto'} elements={contacto}></DicNavFooter>
       <DicNavFooter tittle={'Ubicación'} elements={ubicacion}></DicNavFooter>

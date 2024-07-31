@@ -11,7 +11,7 @@ const DicNavFooter = ({tittle, elements}) => {
       </Flex>
       <Flex direction='column'>
             {elements.map((element, index) => (
-                    <Link key={index} as='a' textDecoration='none' cursor='pointer' fontSize='9px' color='white' letterSpacing='1.5px' lineHeight='18px' opacity='0.8'  _hover={{color:'white', textDecoration:'underline'}} >
+                    <Link key={index} as='a' textDecoration='none' cursor='pointer' fontSize={{base:'12px', xl:'9px'}} color='white' letterSpacing='1.5px' lineHeight='18px' opacity='0.8'  _hover={{color:'white', textDecoration:'underline'}} >
                     {element}
                     </Link>
                      ))}

@@ -32,7 +32,7 @@ const VerticalContainer = ({tittle, info, elements, directionFlex, letterSpacing
             </Text>
 
             <Text as='p' 
-            fontSize={{base:'20px',md:'11px'}} 
+            fontSize={{base:'14px',lg:'11px'}} 
             lineHeight={{base:'25px',md:'19px'}} 
             letterSpacing={letterSpacing} 
             width={{base:'100%', md:''}}

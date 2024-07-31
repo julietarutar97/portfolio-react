@@ -21,8 +21,8 @@ import { bool, boolean } from 'yup'
 
 const Header = () => {
 
-  const display = useBreakpointValue({ base: 'none',md:'flex'})
-  const flexDirection = useBreakpointValue({base: 'row', md:'column'})
+  const display = useBreakpointValue({ base: 'none',lg:'flex'})
+  const flexDirection = useBreakpointValue({base: 'row', lg:'column'})
   const flexDirectionTitulo = useBreakpointValue({base: 'column', md:'row'})
   const marginTopTitulo= useBreakpointValue({base:'35px', md:'150px'})
   const alignItems = useBreakpointValue({base: 'flex-start', md:'center'})
@@ -121,7 +121,7 @@ const Header = () => {
         <Flex direction='row' marginBottom='30px' opacity='0.8'> 
 
           {/* Iconos redes izquierda */}
-          <Flex ml={{base:'50px',md:'22px'}} mt={{base:'25px',md:''}}  direction={flexDirection} alignItems='center' >
+          <Flex ml={{base:'50px',lg:'22px'}} mt={{base:'25px',md:''}}  direction={flexDirection} alignItems='center' >
             {SocialMedia.map( (social, index) => (
               <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref}> </SocialLinks>
             ))

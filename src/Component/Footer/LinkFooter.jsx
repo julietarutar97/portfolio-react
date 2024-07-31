@@ -17,7 +17,7 @@ const LinkFooter = ({srcImage}) => {
      marginLeft='-8px'
     >
 
-    <Image src={srcImage} width='15px' height='16px'/>
+    <Image src={srcImage} width={{base:'25px',xl:'15px'}} height='16px'/>
     </Link>
   )
 }

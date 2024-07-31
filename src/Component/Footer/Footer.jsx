@@ -9,7 +9,7 @@ const Footer = () => {
   const justifyContent = useBreakpointValue ({base: 'center',md:'center', lg:'center'})
     return (
       <Flex direction='column' alignContent='center' justifyContent={justifyContent}  bg="#131313" alignItems='center'>
-        <Flex direction='row' wrap='wrap' textAlign='left' justifyContent={justifyContent} margin='0 45px'>
+        <Flex direction={{base:'column', xl:'row'}} wrap='wrap' textAlign='left' justifyContent={justifyContent} margin='0 45px'>
           <SocialMediaFooter></SocialMediaFooter>
           <NavFooter></NavFooter>
         </Flex>

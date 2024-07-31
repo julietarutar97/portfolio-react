@@ -9,7 +9,7 @@ const ContainerGaleria = ({href, bgImage, tituloProyecto,descProyecto}) => {
     target='_blank' 
     bgImage={bgImage} 
     marginTop='42px' 
-    height='570px' 
+    height={{base:'260px', md:'570px' }}
     bgSize='cover' 
     bgRepeat='no-repeat' 
     bgPosition='center' 
@@ -32,7 +32,7 @@ const ContainerGaleria = ({href, bgImage, tituloProyecto,descProyecto}) => {
             </Flex>
             
             <Flex>
-            <Image src='./icons/iconoFlechaNegro.png' height='40px' transform='rotate(-90deg)'/>
+            <Image src='./icons/iconoFlechaNegro.png' height='40px' transform='rotate(-90deg)' display={{base:'none', md:'flex'}}/>
             </Flex>
 
 

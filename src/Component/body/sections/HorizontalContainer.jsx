@@ -5,9 +5,9 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
   const paddingLeft = useBreakpointValue({ base: '50px', lg: '50px', xl: '200px' })
   const paddingRight = useBreakpointValue({ base: '50px', lg: '50px', xl: '200px' })
   const paddingTop = useBreakpointValue({ base: '25px', lg: '0px', xl: '0px' })
-  const justifyContent = useBreakpointValue({ base: 'space-between', xl: 'space-around' })
-  const flexDirection = useBreakpointValue({ base: 'column', xl: 'row' })
-  const width = useBreakpointValue({ base: '240px', xl: '520px' })
+  const justifyContent = useBreakpointValue({ base: 'space-between', lg: 'space-around' })
+  const flexDirection = useBreakpointValue({ base: 'column', lg: 'row' })
+  const width = useBreakpointValue({ base: '240px', lg: '520px' })
   
   return (
     <Flex 
@@ -23,7 +23,7 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
       <Flex 
         direction={flexDirection} 
         justifyContent={justifyContent} 
-        textAlign={{ base: 'center', md: 'left' }}  
+        textAlign={{ base: 'center', lg: 'left' }}  
         alignItems='center'
         w='100%' 
         paddingLeft={paddingLeft} 
@@ -33,7 +33,7 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
           display='flex' 
           flexDirection='column'  
           w={width}
-          alignItems={{ base: 'center', xl: 'flex-start' }}
+          alignItems={{ base: 'center', lg: 'flex-start' }}
         >
           <Text 
             as='h2' 
@@ -50,10 +50,10 @@ const HorizontalContainer = ({ tittle, info, elements, directionFlex }) => {
           <Text 
             as='p' 
             lineHeight='20px' 
-            fontSize={{ base: '15px', md: '12px' }}
+            fontSize={{ base: '15px', xl: '12px' }}
             opacity='0.8'
-            width={{ base: '400px', md: '240px' }}
-            textAlign={{ base: 'center', md: 'left' }}
+            width={{ base: '400px', xl: '240px' }}
+            textAlign={{ base: 'center', lg: 'left' }}
           >
             {info}
           </Text>

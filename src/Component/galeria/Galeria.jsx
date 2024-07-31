@@ -3,8 +3,8 @@ import { Divider, Text, Link, Flex, Container, Box, Image, useBreakpointValue} f
 import ContainerGaleria from './ContainerGaleria'
 
 const Galeria = () => {
-  const paddingLeft = useBreakpointValue({ base: '50px', '2xl': '325px'})
-  const paddingRight = useBreakpointValue({ base: '50px', '2xl': '325px' })
+  const paddingLeft = useBreakpointValue({ base: '50px', lg:'115px','2xl': '325px'})
+  const paddingRight = useBreakpointValue({ base: '50px', lg:'115px', '2xl': '325px' })
   
     const elementGaleria =[
         
