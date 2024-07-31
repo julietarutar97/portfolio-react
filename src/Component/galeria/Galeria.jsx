@@ -35,6 +35,31 @@ const Galeria = () => {
             </ContainerGaleria>
         
         </Flex>
+        <Flex
+         height='75px'
+         width='100%'
+         display='flex'
+         alignItems='center'
+         justifyContent='center'
+         alignContent='center'
+         mt='25px'
+        >
+           <Link
+           textDecoration='none'
+           textTransform='uppercase'
+           cursor='pointer'
+           border=' 1px solid white'
+           p='10px 30px'
+           color='rgba(255, 255, 255,0.9)'
+           fontSize='10px'
+           fontWeight='400'
+           letterSpacing='1px'
+           href='https://github.com/julietarutar97'
+           target='_blank'>
+           Ver más
+           </Link>
+          
+        </Flex>
     </Flex>
     <Divider  orientation='horizontal' marginBottom='85px' marginTop='85px' opacity='0.1' width='63%' />
     </Flex>
