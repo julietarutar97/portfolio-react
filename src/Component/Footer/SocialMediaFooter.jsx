@@ -13,7 +13,7 @@ const SocialMediaFooter = () => {
       </Flex>
       <Flex direction='row' marginTop='20px' justifyContent={justifyContent} alignItems={alignItems}>
       
-            <LinkFooter srcImage={'./icons/linkedinIcon.svg'} href={'www.linkedin.com/in/julietarutar73'}></LinkFooter>
+            <LinkFooter srcImage={'./icons/linkedinIcon.svg'} href={'https://www.linkedin.com/in/julietarutar73'}></LinkFooter>
             <LinkFooter srcImage={'./icons/gitIcon.svg'}href={'https://github.com/julietarutar97'} ></LinkFooter>
             <LinkFooter srcImage={'./icons/behanceIcon.svg'} href={'https://www.behance.net/julietarutar'}></LinkFooter>
             <LinkFooter srcImage={'./icons/gmailIcon.svg'} href={'mailto:julietarutar97@gmail.com'}></LinkFooter>
