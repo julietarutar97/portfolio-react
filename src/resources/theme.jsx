@@ -11,6 +11,17 @@ import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
 import { color } from "framer-motion";
 
+const breakpoints = {
+  base: '0px',
+  sm: '320px',
+  md: '480px',
+  lg: '768px',
+  xl: '1024px',
+  '2xl': '1280px',
+  '3xl': '1440px',
+  '4xl': '1920px',
+}
+
 const theme = extendTheme({
   styles: {
     global: {

@@ -21,7 +21,11 @@ import { bool, boolean } from 'yup'
 
 const Header = () => {
 
-  const display = useBreakpointValue({ base: 'none',md:'none', lg: 'flex' })
+  const display = useBreakpointValue({ base: 'none',md:'flex'})
+  const flexDirection = useBreakpointValue({base: 'row', md:'column'})
+  const flexDirectionTitulo = useBreakpointValue({base: 'column', md:'row'})
+  const marginTopTitulo= useBreakpointValue({base:'35px', md:'150px'})
+  const alignItems = useBreakpointValue({base: 'flex-start', md:'center'})
   const paddingLeft=useBreakpointValue({base: '25px', '2xl':'85px'})
   const paddingRight= useBreakpointValue({base: '25px', '2xl':'85px'})
   const widthImage = useBreakpointValue({base: '85px', })
@@ -97,15 +101,17 @@ const Header = () => {
             </Menu>
         </Flex>
 
-        <Box mt='150px' ml={marginLeft} justifyContent='center'>
-          <Image src='/icons/iconSection1.svg'  width='28px' mb='15px'/>
-          <Text as='b' fontSize='18px' textTransform='uppercase'>Bienvenido !</Text>
-          <Flex direction='row' alignItems='center' mb='15px'>
+        <Box mt={marginTopTitulo} ml={marginLeft} justifyContent='center'>
+          <Image src='/icons/iconSection1.svg'  width='28px' mb='15px' display={display}/>
+          <Text as='b' fontSize={{base:'25px', md:'18px'}} letterSpacing='1.5px' textTransform='uppercase'>Bienvenido !</Text>
+
+          <Flex direction={flexDirectionTitulo} alignItems={alignItems} mb='15px' mt={{base:'20px',md:''}}>
           <Text as='h1'  fontSize='7xl'fontFamily='nanumGothic.general' marginRight='10px' >Soy</Text>
           <Text as ='b' fontSize='7xl'fontFamily='nanumGothic.general'fontWeight='medium'>Desarrolladora</Text>
           </Flex>
-          <Text opacity='0.8' fontSize='18px'>Convierto lo complejo en simple</Text>
-          <Flex direction='row' letterSpacing='1.5px' textTransform='uppercase' alignItems='center' mt='20px' >
+
+          <Text opacity='0.8' fontSize={{base:'20px',md:'18px'}}>Convierto lo complejo en simple</Text>
+          <Flex direction='row' letterSpacing='1.5px' textTransform='uppercase' alignItems='center' mt='20px' display={display} >
           <Image src='/icons/contactIcon.png'  width='28px' mr='10px'/>
           <Text opacity='0.8' fontSize='12px'>Contactame</Text>
           </Flex>
@@ -115,7 +121,7 @@ const Header = () => {
         <Flex direction='row' marginBottom='30px' opacity='0.8'> 
 
           {/* Iconos redes izquierda */}
-          <Flex ml='22px' direction='column' alignItems='center'>
+          <Flex ml={{base:'50px',md:'22px'}} mt={{base:'25px',md:''}}  direction={flexDirection} alignItems='center' >
             {SocialMedia.map( (social, index) => (
               <SocialLinks key={index} urlIcono={social.urlIcono} linkref={social.linkref}> </SocialLinks>
             ))
@@ -134,7 +140,7 @@ const Header = () => {
             </Flex>
           </Flex>
 
-          <Flex as='section' direction='row' alignItems='flex-end' marginLeft='230px' fontSize='10px'>
+          <Flex as='section' direction='row' alignItems='flex-end' marginLeft='230px' fontSize='10px' display={display}>
           {Contact.map( (social, index) => (
               <ContactLinks key={index} tittle={social.tittle} info={social.info}> </ContactLinks>
             ))
